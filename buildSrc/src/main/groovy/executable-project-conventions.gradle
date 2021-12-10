@@ -1,0 +1,16 @@
+plugins {
+    id 'application'
+}
+
+tasks.register('runWithParameters') {	
+	group('application')
+	description 'Run project with the default parameters defined in defaultRunParamters property'
+	doLast {
+		if (project.hasProperty('defaultRunParameters')) {
+			run {
+				args = project.defaultRunParameters
+			}
+		}
+	}
+	finalizedBy 'run'
+}

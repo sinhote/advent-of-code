@@ -1,0 +1,15 @@
+plugins {
+    id 'executable-project-conventions'
+}
+
+application {
+    mainClass = 'gal.sinhote.adventofcode._2021.day1.part1.Main'
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs "../src/main/resources"
+        }
+    }
+}	
