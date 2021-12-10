@@ -1,0 +1,19 @@
+plugins {
+    id 'executable-project-conventions'
+}
+
+application {
+    mainClass = 'gal.sinhote.adventofcode._2021.day2.part2.Main'
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs "../src/main/resources"
+        }
+    }
+}
+
+dependencies {
+	compile project(':2021:Day 2')
+}

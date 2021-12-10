@@ -1,0 +1,8 @@
+plugins {
+	id 'java-library'
+}
+
+project.ext {
+	INPUT_FILENAME = '/input.txt'
+	defaultRunParameters = [ INPUT_FILENAME ]
+}
