@@ -1,4 +1,4 @@
-package gal.sinhote.adventofcode._2021.day3.part1;
+package gal.sinhote.adventofcode._2021.day3;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
