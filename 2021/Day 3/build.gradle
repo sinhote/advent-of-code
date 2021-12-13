@@ -1,0 +1,12 @@
+plugins {
+    id 'executable-project-conventions'
+}
+
+application {
+    mainClass = 'gal.sinhote.adventofcode._2021.day3.Main'
+}
+
+project.ext {
+	INPUT_FILENAME = '/input.txt'
+	defaultRunParameters = [ INPUT_FILENAME ]
+}
