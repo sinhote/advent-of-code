@@ -11,7 +11,7 @@ public class Main {
 
 	private static final String REPORT_FORMAT = "%s winning board was:\n%s\nLast number drawn for that board was: %d.\nThe sum of the remaining figures of the board is: %d.\nBoard score is: %d.";
 
-	public static void main(String[] args) throws BoardHasBingoException, URISyntaxException, IOException {
+	public static void main(String[] args) {
 
 		if (args.length == 0) {
 			System.err.println("Expected a parameter containing an input file name");
