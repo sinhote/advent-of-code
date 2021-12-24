@@ -85,7 +85,7 @@ public class EfficientLanternfishSimulator {
 				return new EfficientLanternfishSimulator(
 						Stream.of(inputLine.split(",")).map(Integer::parseInt).collect(toList()));
 			} else {
-				throw new IllegalArgumentException("Inputfile must not be null");
+				throw new IllegalArgumentException("Inputfile must not be empty");
 			}
 		}
 	}
