@@ -15,5 +15,5 @@ sourceSets {
 }
 
 dependencies {
-	compile project(':2021:Day 2')
+	implementation project(':2021:Day 2')
 }
