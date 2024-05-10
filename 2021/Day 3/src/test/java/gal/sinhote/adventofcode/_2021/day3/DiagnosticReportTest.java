@@ -10,8 +10,6 @@ import java.nio.file.Paths;
 
 import org.junit.jupiter.api.Test;
 
-import gal.sinhote.adventofcode._2021.day3.DiagnosticReport;
-
 class DiagnosticReportTest {
 
 	@Test

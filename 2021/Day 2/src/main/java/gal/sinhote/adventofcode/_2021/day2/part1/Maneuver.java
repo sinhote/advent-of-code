@@ -1,5 +1,6 @@
 package gal.sinhote.adventofcode._2021.day2.part1;
 
+import java.util.NoSuchElementException;
 import java.util.Objects;
 
 /**
@@ -29,7 +30,7 @@ public class Maneuver {
 	public static Maneuver parseManeuver(String maneuverStr) {
 		try {
 			String[] parts = maneuverStr.split("\\s+", 2);
-			return new Maneuver(Movement.parseMovement(parts[0]).orElseThrow(), Integer.parseInt(parts[1]));
+			return new Maneuver(Movement.parseMovement(parts[0]).orElseThrow(NoSuchElementException::new), Integer.parseInt(parts[1]));
 		} catch (Exception e) {
 			throw new IllegalArgumentException("Error parsing Maneuver: " + e.getMessage(), e);
 		}

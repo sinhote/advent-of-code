@@ -2,6 +2,12 @@ plugins {
     id 'application'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
 tasks.register('runWithParameters') {	
 	group('application')
 	description 'Run project with the default parameters defined in defaultRunParamters property'

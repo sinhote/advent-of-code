@@ -1,6 +1,5 @@
 package gal.sinhote.adventofcode._2021.day5;
 
-import static java.util.function.Predicate.not;
 import static java.util.stream.Collectors.toList;
 
 import java.io.BufferedReader;
@@ -23,7 +22,7 @@ public class SegmentIntersections {
 	public SegmentIntersections(Path filePath) throws IOException {
 		allSegments = readSegmentsFromFile(filePath);
 
-		nonObliqueSegments = allSegments.stream().filter(not(IntegerSegment2D::isOblique)).collect(toList());
+		nonObliqueSegments = allSegments.stream().filter(segment -> !segment.isOblique()).collect(toList());
 
 		allSegmentIntersections = calculateIntersections(allSegments);
 		nonObliqueSegmentIntersections = calculateIntersections(nonObliqueSegments);
