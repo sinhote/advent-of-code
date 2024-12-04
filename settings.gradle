@@ -20,4 +20,5 @@ include('2021:Day 7')
 
 include('2024:Day 1')
 include('2024:Day 2')
+include('2024:Day 3')
 

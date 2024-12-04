@@ -1,0 +1,11 @@
+plugins {
+    id 'executable-project-conventions'
+}
+
+application {
+    mainClass = 'gal.sinhote.adventofcode.year2024.day3.Day3'
+}
+
+project.ext {
+	defaultRunParameters = [ 'src/main/resources/input' ]
+}
