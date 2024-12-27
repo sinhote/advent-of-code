@@ -8,6 +8,8 @@
  */
 
 rootProject.name = 'AdventOfCode'
+include('common')
+
 include('2021:Day 1:Part 1')
 include('2021:Day 1:Part 2')
 include('2021:Day 2:Part 1')
@@ -24,3 +26,5 @@ include('2024:Day 3')
 include('2024:Day 4')
 include('2024:Day 5')
 include('2024:Day 6')
+include('2024:Day 7')
+
